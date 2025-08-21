@@ -87,9 +87,14 @@ a {
   text-decoration: none;
 }
 /*Global Styling*/
+body,
+html {
+  height: 100%;
+}
+
 body {
   display: grid;
-  grid-template: 1fr 5fr / 1fr 4fr;
+  grid-template: auto 1fr / 1fr 4fr;
 }
 
 /*Media Styling*/
@@ -196,7 +201,9 @@ nav {
 
 .nav-container {
   display: grid;
-  grid-template-rows: repeat (13, 1fr);
+  grid-template-rows: 2fr repeat(11, 1fr);
+  height: fit-content;
+  gap: 1rem;
 }
 
 nav * {
@@ -205,21 +212,61 @@ nav * {
 
 .navIcon {
   filter: brightness(0) invert(1);
+  justify-self: center;
 }
 
 .menuItem {
   display: grid;
   grid-template-columns: 1fr 3fr;
-  grid-template-rows: 1fr;
   font-size: 1.5rem;
-  font-weight: 800;
-  height: fit-content;
+  font-weight: 600;
+  align-items: center;
 }
 
 .navHeader {
   font-weight: 800;
   font-size: 2rem;
+  grid-row: 1 / 2;
+}
+
+.navHeader span {
   grid-row: 1 / 3;
+}
+
+.home {
+  grid-row: 3 / 4;
+}
+
+.profile {
+  grid-row: 4 / 5;
+}
+
+.msg {
+  grid-row: 5 / 6;
+}
+
+.history {
+  grid-row: 6 / 7;
+}
+
+.task {
+  grid-row: 7 / 8;
+}
+
+.com {
+  grid-row: 8 / 9;
+}
+
+.setting {
+  grid-row: 10 / 11;
+}
+
+.support {
+  grid-row: 11 / 12;
+}
+
+.privacy {
+  grid-row: 12 / 13;
 }
 /*Card Section Styling*/
 main {
