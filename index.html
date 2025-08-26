@@ -7,106 +7,116 @@
     <title>|Dashboard|</title>
   </head>
   <body>
-    <header>
-      <h1 class="visually-hidden">Profile Dashboard</h1>
-      <div class="upper">
+    <header class="header">
+      <h1 class="u-visually-hidden">Profile Dashboard</h1>
+      <div class="header__upper">
         <img
-          class="search icon"
+          class="header__upper-search-icon u-icon-normal"
           src="assets/magnify.svg"
           alt="Magnifying Glass"
         />
         <input
-          class="searchbar"
+          class="header__upper-searchbar"
           type="search"
-          name="search-bar"
-          id="search-bar"
+          name="searchbar"
+          id="header__upper-search-bar"
         />
         <img
-          class="notification icon"
+          class="header__upper-bell-icon u-icon-normal"
           src="assets/bell-ring-outline.svg"
           alt="The Outline of a Bell Ringing"
         />
         <img
-          class="profile-pic"
+          class="u-profile-pic-normal"
           src="assets/yellow-pfp.jpg"
           alt="A Minimalist Drawing of a Woman with a Yellow Background"
         />
-        <span class="small-name">Stanley Tucci</span>
+        <span class="u-text-normal">Stanley Tucci</span>
       </div>
-      <div class="lower">
+      <div class="header__lower">
         <img
-          class="icon large"
+          class="header__lower-profile-pic u-profile-pic-large"
           src="assets/yellow-pfp.jpg"
           alt="A Minimalist Drawing of a Woman with a Yellow Background"
         />
-        <span class="greeting">Hi there,</span>
-        <h2 class="big-name">Stanley Tucci (@stantheman)</h2>
-        <button class="new-btn">New</button>
-        <button class="upload-btn">Upload</button>
-        <button class="share-btn">Share</button>
+        <span class="header__lower-greeting u-text-small">Hi there,</span>
+        <h2 class="header__lower-username">Stanley Tucci (@stantheman)</h2>
+        <button class="header__lower-new-btn u-btn">New</button>
+        <button class="header__lower-upload-btn u-btn">Upload</button>
+        <button class="header__lower-share-btn u-btn">Share</button>
       </div>
     </header>
-    <nav>
-      <div class="nav-container">
+    <nav class="nav">
+      <div class="nav__container">
         <div class="menuItem navHeader">
           <img
-            class="icon large navIcon"
+            class="u-icon-large navIcon nav__container-header-dashboard-icon"
             src="assets/view-dashboard.svg"
             alt=""
           />
-          <span aria-hidden="true">Dashboard</span>
+          <span class="nav__container-header-title" aria-hidden="true"
+            >Dashboard</span
+          >
         </div>
         <a class="menuItem home" href="#"
-          ><img class="icon navIcon" src="assets/home.svg" alt="" />Home</a
+          ><img
+            class="u-icon-normal navIcon"
+            src="assets/home.svg"
+            alt=""
+          />Home</a
         >
         <a class="menuItem profile" href="#"
           ><img
-            class="icon navIcon"
+            class="u-icon-normal navIcon"
             src="assets/card-account-details-outline.svg"
             alt=""
           />Profile</a
         >
         <a class="menuItem msg" href="#"
           ><img
-            class="icon navIcon"
+            class="u-icon-normal navIcon"
             src="assets/message-reply.svg"
             alt=""
           />Messages</a
         >
         <a class="menuItem history" href="#"
           ><img
-            class="icon navIcon"
+            class="u-icon-normal navIcon"
             src="assets/history.svg"
             alt=""
           />History</a
         >
         <a class="menuItem task" href="#"
           ><img
-            class="icon navIcon"
+            class="u-icon-normal navIcon"
             src="assets/file-multiple.svg"
             alt=""
           />Tasks</a
         >
         <a class="menuItem com" href="#"
           ><img
-            class="icon navIcon"
+            class="u-icon-normal navIcon"
             src="assets/account-group.svg"
             alt=""
           />Communities</a
         >
         <a class="menuItem setting" href="#"
-          ><img class="icon navIcon" src="assets/cog.svg" alt="" />Settings</a
+          ><img
+            class="u-icon-normal navIcon"
+            src="assets/cog.svg"
+            alt=""
+          />Settings</a
         >
         <a class="menuItem support" href="#"
           ><img
-            class="icon navIcon"
+            class="u-icon-normal navIcon"
             src="assets/help-box.svg"
             alt=""
           />Support</a
         >
         <a class="menuItem privacy" href="#"
           ><img
-            class="icon navIcon"
+            class="u-icon-normal navIcon"
             src="assets/shield-check.svg"
             alt=""
           />Privacy</a
@@ -126,11 +136,17 @@
               quisquam similique eius.
             </p>
             <a class="fav" href="#"
-              ><img class="icon" src="assets/star-plus-outline.svg" alt="" /></a
+              ><img
+                class="u-icon-normal"
+                src="assets/star-plus-outline.svg"
+                alt="" /></a
             ><a class="share" href="#"
-              ><img class="icon" src="assets/eye-plus-outline.svg" alt="" /></a
+              ><img
+                class="u-icon-normal"
+                src="assets/eye-plus-outline.svg"
+                alt="" /></a
             ><a class="fork" href="#"
-              ><img class="icon" src="assets/source-fork.svg" alt=""
+              ><img class="u-icon-normal" src="assets/source-fork.svg" alt=""
             /></a>
           </div>
           <div class="project card">
@@ -142,11 +158,17 @@
               consectetur commodi eveniet.
             </p>
             <a class="fav" href="#"
-              ><img class="icon" src="assets/star-plus-outline.svg" alt="" /></a
+              ><img
+                class="u-icon-normal"
+                src="assets/star-plus-outline.svg"
+                alt="" /></a
             ><a class="share" href="#"
-              ><img class="icon" src="assets/eye-plus-outline.svg" alt="" /></a
+              ><img
+                class="u-icon-normal"
+                src="assets/eye-plus-outline.svg"
+                alt="" /></a
             ><a class="fork" href="#"
-              ><img class="icon" src="assets/source-fork.svg" alt=""
+              ><img class="u-icon-normal" src="assets/source-fork.svg" alt=""
             /></a>
           </div>
           <div class="project card">
@@ -158,11 +180,17 @@
               exercitationem aliquid neque culpa fuga?
             </p>
             <a class="fav" href="#"
-              ><img class="icon" src="assets/star-plus-outline.svg" alt="" /></a
+              ><img
+                class="u-icon-normal"
+                src="assets/star-plus-outline.svg"
+                alt="" /></a
             ><a class="share" href="#"
-              ><img class="icon" src="assets/eye-plus-outline.svg" alt="" /></a
+              ><img
+                class="u-icon-normal"
+                src="assets/eye-plus-outline.svg"
+                alt="" /></a
             ><a class="fork" href="#"
-              ><img class="icon" src="assets/source-fork.svg" alt=""
+              ><img class="u-icon-normal" src="assets/source-fork.svg" alt=""
             /></a>
           </div>
           <div class="project card">
@@ -174,11 +202,17 @@
               sint, fugiat a? Dolorem, ratione?
             </p>
             <a class="fav" href="#"
-              ><img class="icon" src="assets/star-plus-outline.svg" alt="" /></a
+              ><img
+                class="u-icon-normal"
+                src="assets/star-plus-outline.svg"
+                alt="" /></a
             ><a class="share" href="#"
-              ><img class="icon" src="assets/eye-plus-outline.svg" alt="" /></a
+              ><img
+                class="u-icon-normal"
+                src="assets/eye-plus-outline.svg"
+                alt="" /></a
             ><a class="fork" href="#"
-              ><img class="icon" src="assets/source-fork.svg" alt=""
+              ><img class="u-icon-normal" src="assets/source-fork.svg" alt=""
             /></a>
           </div>
           <div class="project card">
@@ -190,11 +224,17 @@
               asperiores? Repellat, aliquam.
             </p>
             <a class="fav" href="#"
-              ><img class="icon" src="assets/star-plus-outline.svg" alt="" /></a
+              ><img
+                class="u-icon-normal"
+                src="assets/star-plus-outline.svg"
+                alt="" /></a
             ><a class="share" href="#"
-              ><img class="icon" src="assets/eye-plus-outline.svg" alt="" /></a
+              ><img
+                class="u-icon-normal"
+                src="assets/eye-plus-outline.svg"
+                alt="" /></a
             ><a class="fork" href="#"
-              ><img class="icon" src="assets/source-fork.svg" alt=""
+              ><img class="u-icon-normal" src="assets/source-fork.svg" alt=""
             /></a>
           </div>
           <div class="project card">
@@ -206,11 +246,17 @@
               ut consectetur consequuntur veritatis eligendi suscipit?
             </p>
             <a class="fav" href="#"
-              ><img class="icon" src="assets/star-plus-outline.svg" alt="" /></a
+              ><img
+                class="u-icon-normal"
+                src="assets/star-plus-outline.svg"
+                alt="" /></a
             ><a class="share" href="#"
-              ><img class="icon" src="assets/eye-plus-outline.svg" alt="" /></a
+              ><img
+                class="u-icon-normal"
+                src="assets/eye-plus-outline.svg"
+                alt="" /></a
             ><a class="fork" href="#"
-              ><img class="icon" src="assets/source-fork.svg" alt=""
+              ><img class="u-icon-normal" src="assets/source-fork.svg" alt=""
             /></a>
           </div>
         </div>
