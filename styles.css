@@ -102,6 +102,34 @@ h6 {
   padding: 0.5rem 1rem 0.5rem 1rem;
   align-self: center;
 }
+
+.u-text-small {
+  font-size: 0.75rem;
+  font-weight: 800;
+}
+
+.u-svg-white {
+  filter: brightness(0) invert(1);
+  justify-self: center;
+}
+
+.u-text-white {
+  color: #ffffff;
+}
+
+.u-card {
+  background-color: #ffffff;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  box-shadow: 2px 2px 6px 2px rgba(0, 0, 0, 0.2);
+}
+
+.u-single-card-wrapper {
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+
 /*Typography*/
 body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
@@ -115,10 +143,6 @@ body {
 
 a {
   text-decoration: none;
-}
-
-.card-title {
-  height: fit-content;
 }
 /*Global Styling*/
 body,
@@ -152,14 +176,14 @@ header {
   align-items: center;
 }
 
-.header__upper-searchbar {
+.header__searchbar {
   height: 2rem;
   border: none;
   border-radius: 16px;
   background-color: #e2e8f0;
 }
 
-.header__upper-bell-icon {
+.header__bell-icon {
   grid-column: 4 / 5;
 }
 
@@ -170,16 +194,11 @@ header {
   grid-template: 1fr 2fr / 0.75fr 3fr 3fr 1.5fr 1.5fr 1.5fr;
 }
 
-.header__lower-profile-pic {
+.header__profile-pic--large {
   grid-row: 1 / 3;
 }
 
-.u-text-small {
-  font-size: 0.75rem;
-  font-weight: 800;
-}
-
-.header__lower-greeting {
+.header__greeting {
   grid-area: 1 / 2 / 2 / 3;
 }
 
@@ -187,15 +206,15 @@ header {
   grid-area: 2 / 2 / 3 / 3;
 }
 
-.header__lower-new-btn {
+.header__btn--new {
   grid-area: 1 / 4 / 3 / 5;
 }
 
-.header__lower-upload-btn {
+.header__btn--upload {
   grid-area: 1 / 5 / 3 / 6;
 }
 
-.header__lower-share-btn {
+.header__btn--share {
   grid-area: 1 / 6 / 3 / 7;
 }
 /*Nav Styling*/
@@ -212,26 +231,19 @@ header {
   grid-template-rows: 2fr repeat(11, 1fr);
   height: fit-content;
   gap: 1rem;
+  margin: 0;
+  padding: 0;
 }
 
-.nav__container-header-dashboard-icon {
+.nav__dashboard-icon {
   grid-column: 1 / 2;
 }
 
-.nav__container-header-title {
+.nav__header {
   grid-column: 2 / 3;
 }
 
-nav * {
-  color: #fff;
-}
-
-.navIcon {
-  filter: brightness(0) invert(1);
-  justify-self: center;
-}
-
-.menuItem {
+.nav__menu-item {
   display: grid;
   grid-template-columns: 1fr 3fr;
   font-size: 1.25rem;
@@ -239,53 +251,49 @@ nav * {
   align-items: center;
 }
 
-.navHeader {
+.nav__menu-item--header {
   font-weight: 800;
   font-size: 2rem;
   grid-row: 1 / 2;
 }
 
-.navHeader span {
-  grid-row: 1 / 3;
-}
-
-.home {
+.nav__home {
   grid-row: 3 / 4;
 }
 
-.profile {
+.nav__profile {
   grid-row: 4 / 5;
 }
 
-.msg {
+.nav__msg {
   grid-row: 5 / 6;
 }
 
-.history {
+.nav__history {
   grid-row: 6 / 7;
 }
 
-.task {
+.nav__task {
   grid-row: 7 / 8;
 }
 
-.com {
+.nav__com {
   grid-row: 8 / 9;
 }
 
-.setting {
+.nav__setting {
   grid-row: 10 / 11;
 }
 
-.support {
+.nav__support {
   grid-row: 11 / 12;
 }
 
-.privacy {
+.nav__privacy {
   grid-row: 12 / 13;
 }
 /*Card Section Styling*/
-main {
+.main {
   padding: 2rem 2rem 3rem 1rem;
   display: grid;
   grid-template-columns: 3fr 1fr;
@@ -296,74 +304,61 @@ main {
   grid-row: 2 / 3;
 }
 
-.card-section {
+.main__project-section {
   grid-column: 1 / 2;
   grid-row: 1 / 3;
 }
 
-.announcements {
+.main__announcements-section {
   grid-column: 2 / 3;
   grid-row: 1 / 2;
 }
 
-.projectCardContainer {
+.main__project-cards {
   display: grid;
   gap: 1.5rem;
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
   background-color: #e2e8f0;
 }
 
-.card-title {
+.main__section-title {
   font-size: 1.25rem;
   font-weight: 600;
   margin-bottom: 0.5rem;
 }
 
-.card {
-  background-color: #ffffff;
-  width: 100%;
-  height: 100%;
-  border-radius: 10px;
-  box-shadow: 2px 2px 6px 2px rgba(0, 0, 0, 0.2);
-}
-
-.project {
+.main__project-card {
   border-left: 0.5rem solid orange;
   display: grid;
-  grid-template-columns: 3fr repeat(3, 1fr);
+  grid-template-columns: 3fr repeat(3, 0.5fr);
   grid-template-rows: 0.5fr 2fr 0.5fr;
   padding: 2rem 1rem 2rem 1.5rem;
 }
 
-.project h4 {
+.main__project-card h4 {
   grid-row: 1 / 2;
   grid-column: 1 / 3;
   font-size: 1rem;
 }
 
-.project p {
+.main__project-card p {
   font-size: 1rem;
   color: #636363;
   grid-column: 1 / 5;
   grid-row: 2 / 3;
 }
 
-.fav {
+.main__fav-icon {
   grid-column: 2 / 3;
   grid-row: 3 / 4;
 }
 
-.share {
+.main__share-icon {
   grid-column: 3 / 4;
   grid-row: 3 / 4;
 }
 
-.fork {
+.main__fork-icon {
   grid-column: 4 / 5;
   grid-row: 3 / 4;
-}
-
-.notification-card-container {
-  display: grid;
-  grid-template-rows: auto 1fr;
 }

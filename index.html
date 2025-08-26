@@ -11,18 +11,18 @@
       <h1 class="u-visually-hidden">Profile Dashboard</h1>
       <div class="header__upper">
         <img
-          class="header__upper-search-icon u-icon-normal"
+          class="u-icon-normal"
           src="assets/magnify.svg"
           alt="Magnifying Glass"
         />
         <input
-          class="header__upper-searchbar"
+          class="header__searchbar"
           type="search"
           name="searchbar"
           id="header__upper-search-bar"
         />
         <img
-          class="header__upper-bell-icon u-icon-normal"
+          class="header__bell-icon u-icon-normal"
           src="assets/bell-ring-outline.svg"
           alt="The Outline of a Bell Ringing"
         />
@@ -35,99 +35,108 @@
       </div>
       <div class="header__lower">
         <img
-          class="header__lower-profile-pic u-profile-pic-large"
+          class="header__profile-pic--large u-profile-pic-large"
           src="assets/yellow-pfp.jpg"
           alt="A Minimalist Drawing of a Woman with a Yellow Background"
         />
-        <span class="header__lower-greeting u-text-small">Hi there,</span>
+        <span class="header__greeting u-text-small">Hi there,</span>
         <h2 class="header__lower-username">Stanley Tucci (@stantheman)</h2>
-        <button class="header__lower-new-btn u-btn">New</button>
-        <button class="header__lower-upload-btn u-btn">Upload</button>
-        <button class="header__lower-share-btn u-btn">Share</button>
+        <button class="header__btn--new u-btn">New</button>
+        <button class="header__btn--upload u-btn">Upload</button>
+        <button class="header__btn--share u-btn">Share</button>
       </div>
     </header>
     <nav class="nav">
-      <div class="nav__container">
-        <div class="menuItem navHeader">
+      <ul class="nav__container">
+        <li class="nav__menu-item nav__menu-item--header">
           <img
-            class="u-icon-large navIcon nav__container-header-dashboard-icon"
+            class="u-icon-large u-svg-white nav__dashboard-icon"
             src="assets/view-dashboard.svg"
             alt=""
           />
-          <span class="nav__container-header-title" aria-hidden="true"
+          <span class="nav__header u-text-white" aria-hidden="true"
             >Dashboard</span
           >
-        </div>
-        <a class="menuItem home" href="#"
-          ><img
-            class="u-icon-normal navIcon"
-            src="assets/home.svg"
-            alt=""
-          />Home</a
-        >
-        <a class="menuItem profile" href="#"
-          ><img
-            class="u-icon-normal navIcon"
-            src="assets/card-account-details-outline.svg"
-            alt=""
-          />Profile</a
-        >
-        <a class="menuItem msg" href="#"
-          ><img
-            class="u-icon-normal navIcon"
-            src="assets/message-reply.svg"
-            alt=""
-          />Messages</a
-        >
-        <a class="menuItem history" href="#"
-          ><img
-            class="u-icon-normal navIcon"
-            src="assets/history.svg"
-            alt=""
-          />History</a
-        >
-        <a class="menuItem task" href="#"
-          ><img
-            class="u-icon-normal navIcon"
-            src="assets/file-multiple.svg"
-            alt=""
-          />Tasks</a
-        >
-        <a class="menuItem com" href="#"
-          ><img
-            class="u-icon-normal navIcon"
-            src="assets/account-group.svg"
-            alt=""
-          />Communities</a
-        >
-        <a class="menuItem setting" href="#"
-          ><img
-            class="u-icon-normal navIcon"
-            src="assets/cog.svg"
-            alt=""
-          />Settings</a
-        >
-        <a class="menuItem support" href="#"
-          ><img
-            class="u-icon-normal navIcon"
-            src="assets/help-box.svg"
-            alt=""
-          />Support</a
-        >
-        <a class="menuItem privacy" href="#"
-          ><img
-            class="u-icon-normal navIcon"
-            src="assets/shield-check.svg"
-            alt=""
-          />Privacy</a
-        >
-      </div>
+        </li>
+        <li class="nav__menu-item nav__home">
+          <a href="#"
+            ><img
+              class="u-icon-normal u-svg-white"
+              src="assets/home.svg"
+              alt="" /></a
+          ><a class="u-text-white" href="#">Home</a>
+        </li>
+        <li class="nav__menu-item nav__profile">
+          <a href="#"
+            ><img
+              class="u-icon-normal u-svg-white"
+              src="assets/card-account-details-outline.svg"
+              alt="" /></a
+          ><a class="u-text-white" href="#">Profile</a>
+        </li>
+        <li class="nav__menu-item nav__msg">
+          <a href="#"
+            ><img
+              class="u-icon-normal u-svg-white"
+              src="assets/message-reply.svg"
+              alt="" /></a
+          ><a class="u-text-white" href="#">Messages</a>
+        </li>
+        <li class="nav__menu-item nav__history">
+          <a href="#"
+            ><img
+              class="u-icon-normal u-svg-white"
+              src="assets/history.svg"
+              alt="" /></a
+          ><a class="u-text-white" href="#">History</a>
+        </li>
+        <li class="nav__menu-item nav__task">
+          <a href="#"
+            ><img
+              class="u-icon-normal u-svg-white"
+              src="assets/file-multiple.svg"
+              alt="" /></a
+          ><a class="u-text-white" href="#">Tasks</a>
+        </li>
+        <li class="nav__menu-item nav__com">
+          <a href="#"
+            ><img
+              class="u-icon-normal u-svg-white"
+              src="assets/account-group.svg"
+              alt="" /></a
+          ><a class="u-text-white" href="#">Communities</a>
+        </li>
+        <li class="nav__menu-item nav__setting">
+          <a href="#"
+            ><img
+              class="u-icon-normal u-svg-white"
+              src="assets/cog.svg"
+              alt="" /></a
+          ><a class="u-text-white" href="#">Settings</a>
+        </li>
+        <li class="nav__menu-item nav__support">
+          <a href="#"
+            ><img
+              class="u-icon-normal u-svg-white"
+              src="assets/help-box.svg"
+              alt="" /></a
+          ><a class="u-text-white" href="#">Support</a>
+        </li>
+        <li class="nav__menu-item nav__privacy">
+          <a href="#"
+            ><img
+              class="u-icon-normal u-svg-white"
+              src="assets/shield-check.svg"
+              alt="" /></a
+          ><a class="u-text-white" href="#">Privacy</a>
+        </li>
+      </ul>
     </nav>
-    <main>
-      <div class="card-section">
-        <h3 class="card-title">Your Projects</h3>
-        <div class="projectCardContainer">
-          <div class="project card">
+    <main class="main">
+      <div class="main__project-section">
+        <h3 class="main__section-title">Your Projects</h3>
+        <div class="main__project-cards">
+          <div class="main__project-card u-card">
             <h4>Super Cool Project</h4>
             <p>
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores
@@ -135,21 +144,21 @@
               eos dolor ab nostrum assumenda ducimus facilis fugiat harum,
               quisquam similique eius.
             </p>
-            <a class="fav" href="#"
+            <a class="main__fav-icon" href="#"
               ><img
                 class="u-icon-normal"
                 src="assets/star-plus-outline.svg"
                 alt="" /></a
-            ><a class="share" href="#"
+            ><a class="main__share-icon" href="#"
               ><img
                 class="u-icon-normal"
                 src="assets/eye-plus-outline.svg"
                 alt="" /></a
-            ><a class="fork" href="#"
+            ><a class="main__fork-icon" href="#"
               ><img class="u-icon-normal" src="assets/source-fork.svg" alt=""
             /></a>
           </div>
-          <div class="project card">
+          <div class="main__project-card u-card">
             <h4>Less Cool Project</h4>
             <p>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit.
@@ -157,21 +166,21 @@
               aut quos incidunt modi, nam earum, eos error dicta? Earum
               consectetur commodi eveniet.
             </p>
-            <a class="fav" href="#"
+            <a class="main__fav-icon" href="#"
               ><img
                 class="u-icon-normal"
                 src="assets/star-plus-outline.svg"
                 alt="" /></a
-            ><a class="share" href="#"
+            ><a class="main__share-icon" href="#"
               ><img
                 class="u-icon-normal"
                 src="assets/eye-plus-outline.svg"
                 alt="" /></a
-            ><a class="fork" href="#"
+            ><a class="main__fork-icon" href="#"
               ><img class="u-icon-normal" src="assets/source-fork.svg" alt=""
             /></a>
           </div>
-          <div class="project card">
+          <div class="main__project-card u-card">
             <h4>Impossible App</h4>
             <p>
               Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -179,21 +188,21 @@
               accusamus corrupti eius quibusdam cum tenetur nemo atque
               exercitationem aliquid neque culpa fuga?
             </p>
-            <a class="fav" href="#"
+            <a class="main__fav-icon" href="#"
               ><img
                 class="u-icon-normal"
                 src="assets/star-plus-outline.svg"
                 alt="" /></a
-            ><a class="share" href="#"
+            ><a class="main__share-icon" href="#"
               ><img
                 class="u-icon-normal"
                 src="assets/eye-plus-outline.svg"
                 alt="" /></a
-            ><a class="fork" href="#"
+            ><a class="main__fork-icon" href="#"
               ><img class="u-icon-normal" src="assets/source-fork.svg" alt=""
             /></a>
           </div>
-          <div class="project card">
+          <div class="main__project-card u-card">
             <h4>Easy Peasy App</h4>
             <p>
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis
@@ -201,21 +210,21 @@
               inventore dolorum tempore necessitatibus nulla velit voluptates
               sint, fugiat a? Dolorem, ratione?
             </p>
-            <a class="fav" href="#"
+            <a class="main__fav-icon" href="#"
               ><img
                 class="u-icon-normal"
                 src="assets/star-plus-outline.svg"
                 alt="" /></a
-            ><a class="share" href="#"
+            ><a class="main__share-icon" href="#"
               ><img
                 class="u-icon-normal"
                 src="assets/eye-plus-outline.svg"
                 alt="" /></a
-            ><a class="fork" href="#"
+            ><a class="main__fork-icon" href="#"
               ><img class="u-icon-normal" src="assets/source-fork.svg" alt=""
             /></a>
           </div>
-          <div class="project card">
+          <div class="main__project-card u-card">
             <h4>Ad Blocker</h4>
             <p>
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia
@@ -223,21 +232,21 @@
               debitis quos dolorum sequi harum nulla autem sed tempora, ea
               asperiores? Repellat, aliquam.
             </p>
-            <a class="fav" href="#"
+            <a class="main__fav-icon" href="#"
               ><img
                 class="u-icon-normal"
                 src="assets/star-plus-outline.svg"
                 alt="" /></a
-            ><a class="share" href="#"
+            ><a class="main__share-icon" href="#"
               ><img
                 class="u-icon-normal"
                 src="assets/eye-plus-outline.svg"
                 alt="" /></a
-            ><a class="fork" href="#"
+            ><a class="main__fork-icon" href="#"
               ><img class="u-icon-normal" src="assets/source-fork.svg" alt=""
             /></a>
           </div>
-          <div class="project card">
+          <div class="main__project-card u-card">
             <h4>Money Maker</h4>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -245,29 +254,29 @@
               in recusandae? Porro, sequi neque perferendis voluptatum ipsa esse
               ut consectetur consequuntur veritatis eligendi suscipit?
             </p>
-            <a class="fav" href="#"
+            <a class="main__fav-icon" href="#"
               ><img
                 class="u-icon-normal"
                 src="assets/star-plus-outline.svg"
                 alt="" /></a
-            ><a class="share" href="#"
+            ><a class="main__share-icon" href="#"
               ><img
                 class="u-icon-normal"
                 src="assets/eye-plus-outline.svg"
                 alt="" /></a
-            ><a class="fork" href="#"
+            ><a class="main__fork-icon" href="#"
               ><img class="u-icon-normal" src="assets/source-fork.svg" alt=""
             /></a>
           </div>
         </div>
       </div>
-      <div class="notification-card-container announcements">
-        <h3 class="card-title">Announcements</h3>
-        <div class="announce notification-card card"></div>
+      <div class="u-single-card-wrapper main__announcements-section">
+        <h3 class="main__section-title">Announcements</h3>
+        <div class="main__announcements-card u-card"></div>
       </div>
-      <div class="notification-card-container trending">
-        <h3 class="card-title">Trending</h3>
-        <div class="trend notification-card card"></div>
+      <div class="u-single-card-wrapper main__trending-section">
+        <h3 class="main__section-title">Trending</h3>
+        <div class="main__trending-card u-card"></div>
       </div>
     </main>
   </body>
