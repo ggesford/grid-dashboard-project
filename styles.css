@@ -294,7 +294,7 @@ main {
   grid-row: 1 / 2;
 }
 
-.cardContainer {
+.projectCardContainer {
   display: grid;
   gap: 1.5rem;
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
@@ -319,13 +319,14 @@ main {
   border-left: 0.5rem solid orange;
   display: grid;
   grid-template-columns: 3fr repeat(3, 1fr);
-  grid-template-rows: 1fr 2fr 2fr 2fr;
+  grid-template-rows: 0.5fr 2fr 0.5fr;
   padding: 2rem 1rem 2rem 1.5rem;
 }
 
 .project h4 {
   grid-row: 1 / 2;
   grid-column: 1 / 3;
+  font-size: 1rem;
 }
 
 .project p {
@@ -335,6 +336,22 @@ main {
   grid-row: 2 / 3;
 }
 
-.notification {
-  height: calc(100% - 2.25rem);
+.fav {
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
+}
+
+.share {
+  grid-column: 3 / 4;
+  grid-row: 3 / 4;
+}
+
+.fork {
+  grid-column: 4 / 5;
+  grid-row: 3 / 4;
+}
+
+.notification-card-container {
+  display: grid;
+  grid-template-rows: auto 1fr;
 }
