@@ -10,7 +10,7 @@ A dashboard layout built entirely with CSS Grid.
 
 ## Screenshot
 
-![screenshot](asset/screenshot.png)
+![screenshot](assets/screenshot.png)
 
 ## What I learned
 
